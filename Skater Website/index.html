@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freeze Xplosion</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+<h1>🧊 Freeze Xplosion 💥</h1>
+<p id="status"></p>
+<button onclick="logout()">Logout</button>
+</header>
+
+<main>
+<section>
+<h2>🔐 Login / Registrierung</h2>
+<input id="nick" placeholder="Nickname">
+<input id="pass" type="password" placeholder="Passwort">
+<button onclick="register()">Registrieren</button>
+<button onclick="login()">Login</button>
+</section>
+
+<section>
+<h2>🔔 Benachrichtigungen</h2>
+<div id="notifications"></div>
+</section>
+
+<section>
+<h2>Post</h2>
+<form id="form">
+<input id="title" placeholder="Titel" required>
+<input id="video" placeholder="YouTube Link">
+<textarea id="content" placeholder="Beschreibung" required></textarea>
+<button>Posten</button>
+</form>
+</section>
+
+<section>
+<h2>Community</h2>
+<div id="posts"></div>
+</section>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
